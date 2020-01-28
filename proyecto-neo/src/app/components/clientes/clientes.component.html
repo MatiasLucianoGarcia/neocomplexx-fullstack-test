@@ -1,0 +1,19 @@
+<table *ngIf="clientes!=null">
+    <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Apellido</th>
+        <th>Direccion</th>
+        <th>Acciones</th>
+    </tr>
+    <tr *ngFor="let cliente of clientes">
+        <td>{{cliente.id}}</td>
+        <td>{{cliente.Nombre}}</td>
+        <td>{{cliente.Apellido}}</td>
+        <td>{{cliente.Direccion}}</td>
+        <td><div>
+            <i class="fas fa-edit" (click)="enviarEditar(cliente.id)"></i>
+            <i class="fas fa-trash-alt" (click)="eliminarCliente(cliente.id)"></i>
+        </div></td>
+    </tr>
+</table>

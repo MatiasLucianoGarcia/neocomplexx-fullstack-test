@@ -1,0 +1,29 @@
+<div class="container">
+    <form #clienteForm="ngForm" (ngSubmit)=onSubmit(clienteForm)>
+        <p>
+            <label for="Nombre">Nombre</label><br>
+            <input type="text" name="nombre" #nombre="ngModel" placeholder="Ingrese el Nombre del cliente aqui..." [(ngModel)]="myClient.nombre" required> <br>
+            <span class="form_error" *ngIf="nombre.touched && !nombre.valid">
+                El campo es obligatorio
+            </span>
+        </p>
+        <p>
+            <label for="Apellido">Apellido</label><br>
+            <input type="text" name="apellido" #apellido="ngModel" placeholder="Ingrese el Apellido del cliente aqui..." [(ngModel)]="myClient.apellido" required>
+            <br>
+            <span class="form_error" *ngIf="apellido.touched && !apellido.valid">
+                El campo es obligatorio
+            </span>
+        </p>
+        <p>
+            <label for="Direccion">Dirección</label><br>
+            <input type="text" name="direccion" #direccion="ngModel" placeholder="Ingrese la Dirección del cliente aqui..."[(ngModel)]="myClient.direccion" required>
+            <br>
+            <span class="form_error" *ngIf="direccion.touched && !direccion.valid">
+                El campo es obligatorio
+            </span>
+        </p>
+        <input class="boton" type="submit" value="Enviar" [disabled]="!clienteForm.valid"/>
+
+    </form>
+</div>

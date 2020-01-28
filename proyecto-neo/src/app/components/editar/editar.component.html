@@ -1,0 +1,29 @@
+<div class="container" *ngIf="myClient!=null">
+    <form #clienteForm="ngForm" (ngSubmit)=onSubmit(clienteForm)>
+        <p>
+            <label for="Nombre">Nombre: {{myClient.Nombre}}</label><br>
+            <input type="text" name="nombre" #nombre="ngModel" placeholder="Introducir nuevo valor para Nombre" [(ngModel)]="myClient.nombre" required> <br>
+            <span class="form_error" *ngIf="nombre.touched && !nombre.valid">
+                El campo es obligatorio
+            </span>
+        </p>
+        <p>
+            <label for="Apellido">Apellido: {{myClient.Apellido}}</label><br>
+            <input id="apellido" type="text" name="apellido" #apellido="ngModel" placeholder="Introducir nuevo valor para Apellido" [(ngModel)]="myClient.apellido" required>
+            <br>
+            <span class="form_error" *ngIf="apellido.touched && !apellido.valid">
+                El campo es obligatorio
+            </span>
+        </p>
+        <p>
+            <label for="Direccion">Dirección: {{myClient.Direccion}}</label><br>
+            <input type="text" name="direccion" #direccion="ngModel" placeholder="Introducir nuevo valor para Direccion"[(ngModel)]="myClient.direccion" required>
+            <br>
+            <span class="form_error" *ngIf="direccion.touched && !direccion.valid">
+                El campo es obligatorio
+            </span>
+        </p>
+        <input class="boton" type="submit" value="Actualizar" [disabled]="!clienteForm.valid"/>
+
+    </form>
+</div>

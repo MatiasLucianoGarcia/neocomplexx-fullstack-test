@@ -1,0 +1,32 @@
+.container{
+    width: 50vh;
+    height: 50vh;
+    margin: auto;
+    margin-top: 100px;
+    text-align: center;
+    font-size: 20px;
+    background-color: #b1abab31;
+    padding: 20px;
+}
+
+input{
+    margin:5px;
+    width: 90%;
+    height: 20px;
+    border: 1px solid #b1abab88;
+}
+
+.boton{
+    background-color: #5c00a8b6;
+    height: 40px;
+    width: 100px;
+    transition: 1s;
+    color:white;
+}
+.form_error{
+	font-size: 13px;
+	padding: 3px;
+	background: red;
+	color:white;
+	margin-left: 5px;
+}

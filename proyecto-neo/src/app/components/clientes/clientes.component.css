@@ -1,0 +1,26 @@
+table, td, th {  
+    border: 1px solid #ddd;
+    text-align: left;
+    transition:1s;
+    font-size: 20px;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th{
+      background-color: #b1abab2f;
+  }
+  th, td {
+    padding: 15px;
+  }
+  tr:hover{
+      background-color:#b1abab2f ;
+  }
+  i{
+      font-size: 20px;
+      margin: 5px;
+      cursor: pointer;   
+  }
