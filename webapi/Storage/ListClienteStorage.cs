@@ -10,16 +10,6 @@ namespace webapi.Storage{
         private ListClienteStorage(){
             CollectionClientes=new List<Cliente>();
             nextId=0;
-           // Cliente c1 = new Cliente();
-            //c1.Nombre="Juan";
-            //c1.Direccion="La quiaca 1231";
-            //c1.Apellido="Perez";
-            //Cliente c2 = new Cliente();
-            //c2.Nombre="Juana";
-            //c2.Direccion="Mendoza 691";
-            //c2.Apellido="De Arco";
-            //CollectionClientes.Add(c1);
-            //CollectionClientes.Add(c2);
         }
         public static ListClienteStorage getInstance(){
             return _instance;

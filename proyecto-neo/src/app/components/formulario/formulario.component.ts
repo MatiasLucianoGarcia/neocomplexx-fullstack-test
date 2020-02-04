@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {ClienteService} from '../../services/cliente.service'
+import {NewclienteService} from '../../services/newcliente.service'
 import { Cliente } from 'src/app/models/Cliente';
 import {Router, ActivatedRoute} from '@angular/router';
 
@@ -12,25 +12,23 @@ export class FormularioComponent implements OnInit {
   public myClient:Cliente;
   public save_client;
   constructor(
-    private _clienteService:ClienteService,
+    private _clienteService:NewclienteService,
     private _router : Router, 
     private _route:ActivatedRoute
   ){
     this.myClient= new Cliente('','','','');
   }
 
-  ngOnInit() {
-    this._clienteService.getClientes().subscribe(response=>{console.log(response)});
+  ngOnInit(){
+    console.log(this._clienteService.getClientes());
   }
 
   onSubmit(form){
-    this._clienteService.saveCliente(this.myClient).subscribe(
-      response=>{
-        this._router.navigate(['clientes']);
-      },
-      error=>{
-        console.log(error);
-      }
-    );
+    this.guardarCliente(this.myClient);
   } 
+
+  async guardarCliente(cliente:Cliente){
+    await this._clienteService.saveCliente(cliente);
+    this._router.navigate(['clientes']);
+  }
 }

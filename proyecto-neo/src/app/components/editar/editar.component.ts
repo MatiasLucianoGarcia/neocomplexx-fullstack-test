@@ -1,5 +1,5 @@
 import { Component, OnInit} from '@angular/core';
-import {ClienteService} from '../../services/cliente.service'
+import {NewclienteService} from '../../services/newcliente.service'
 import { Cliente } from 'src/app/models/Cliente';
 import {Router, ActivatedRoute} from '@angular/router';
 
@@ -11,10 +11,10 @@ import {Router, ActivatedRoute} from '@angular/router';
 
 export class EditarComponent implements OnInit {
 
-  public myClient:Cliente;
+  public myClient;
 
   constructor(
-    private _clienteService:ClienteService,
+    private _clienteService:NewclienteService,
     private _router : Router, 
     private _route:ActivatedRoute) { }
 
@@ -27,25 +27,17 @@ export class EditarComponent implements OnInit {
     );
   }
 
-  getCliente(id:Number){
-    this._clienteService.getClienteById(id).subscribe(
-      response=>{
-        this.myClient=response;
-        console.log(this.myClient);
-      },
-      error=>{
-        console.log(error);
-      }
-    );
+  async getCliente(id:Number){
+    this.myClient = await this._clienteService.getClienteById(id);
+  }
+
+  async actualizarCliente(cliente:Cliente){
+    await this._clienteService.updateCliente(cliente);
   }
 
   onSubmit(clienteForm){
-    this._clienteService.updateCliente(this.myClient).subscribe(
-      response=>{
-        this._router.navigate(['clientes']);
-      },
-      error=>{console.log(error);}
-    );
+    this.actualizarCliente(this.myClient);
+    this._router.navigate(['clientes']);    
   }
 
 }

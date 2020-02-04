@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {ClienteService}from '../../services/cliente.service';
+import {NewclienteService} from '../../services/newcliente.service';
 import {Cliente} from '../../models/Cliente';
 import {Router, ActivatedRoute} from '@angular/router';
 
@@ -9,9 +9,9 @@ import {Router, ActivatedRoute} from '@angular/router';
   styleUrls: ['./clientes.component.css']
 })
 export class ClientesComponent implements OnInit {
-  public clientes : Array<Cliente>;
+  public clientes;
   constructor(
-    private _clienteService:ClienteService,
+    private _clienteService:NewclienteService,
     private _router : Router, 
     private _route:ActivatedRoute
   ) { }
@@ -20,25 +20,14 @@ export class ClientesComponent implements OnInit {
     this.getClientes();
   }
 
-  getClientes(){
-    this._clienteService.getClientes().subscribe(
-      response=>{
-        this.clientes=response;
-      },
-      error=>{
-        console.log(error);
-      });
+  async getClientes(){
+  this.clientes = await this._clienteService.getClientes();
   }
 
-  eliminarCliente(id){
-    this._clienteService.deleteCliente(id).subscribe(
-      response=>{
-        this.getClientes();
-      },
-      error=>{
-        console.log(error);
-      }
-    );
+
+  async eliminarCliente(id){
+    await this._clienteService.deleteCliente(id);
+    await this.getClientes();
   }
   
   enviarEditar(id:Number){

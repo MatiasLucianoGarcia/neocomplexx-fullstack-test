@@ -12,3 +12,17 @@ C:\Users\Matias\Desktop\Matias\Proyectos\Neocomplexx\webapi\obj\Debug\netcoreapp
 C:\Users\Matias\Desktop\Matias\Proyectos\Neocomplexx\webapi\obj\Debug\netcoreapp2.2\webapi.RazorTargetAssemblyInfo.cache
 C:\Users\Matias\Desktop\Matias\Proyectos\Neocomplexx\webapi\obj\Debug\netcoreapp2.2\webapi.dll
 C:\Users\Matias\Desktop\Matias\Proyectos\Neocomplexx\webapi\obj\Debug\netcoreapp2.2\webapi.pdb
+C:\Users\neoco\proyecto\neocomplexx-fullstack-test\webapi\bin\Debug\netcoreapp2.2\webapi.deps.json
+C:\Users\neoco\proyecto\neocomplexx-fullstack-test\webapi\bin\Debug\netcoreapp2.2\webapi.runtimeconfig.json
+C:\Users\neoco\proyecto\neocomplexx-fullstack-test\webapi\bin\Debug\netcoreapp2.2\webapi.runtimeconfig.dev.json
+C:\Users\neoco\proyecto\neocomplexx-fullstack-test\webapi\bin\Debug\netcoreapp2.2\webapi.dll
+C:\Users\neoco\proyecto\neocomplexx-fullstack-test\webapi\bin\Debug\netcoreapp2.2\webapi.pdb
+C:\Users\neoco\proyecto\neocomplexx-fullstack-test\webapi\obj\Debug\netcoreapp2.2\webapi.csprojAssemblyReference.cache
+C:\Users\neoco\proyecto\neocomplexx-fullstack-test\webapi\obj\Debug\netcoreapp2.2\webapi.csproj.CoreCompileInputs.cache
+C:\Users\neoco\proyecto\neocomplexx-fullstack-test\webapi\obj\Debug\netcoreapp2.2\webapi.RazorAssemblyInfo.cache
+C:\Users\neoco\proyecto\neocomplexx-fullstack-test\webapi\obj\Debug\netcoreapp2.2\webapi.RazorAssemblyInfo.cs
+C:\Users\neoco\proyecto\neocomplexx-fullstack-test\webapi\obj\Debug\netcoreapp2.2\webapi.AssemblyInfoInputs.cache
+C:\Users\neoco\proyecto\neocomplexx-fullstack-test\webapi\obj\Debug\netcoreapp2.2\webapi.AssemblyInfo.cs
+C:\Users\neoco\proyecto\neocomplexx-fullstack-test\webapi\obj\Debug\netcoreapp2.2\webapi.RazorTargetAssemblyInfo.cache
+C:\Users\neoco\proyecto\neocomplexx-fullstack-test\webapi\obj\Debug\netcoreapp2.2\webapi.dll
+C:\Users\neoco\proyecto\neocomplexx-fullstack-test\webapi\obj\Debug\netcoreapp2.2\webapi.pdb

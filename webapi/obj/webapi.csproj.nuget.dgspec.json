@@ -1,28 +1,30 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Matias\\Desktop\\Matias\\Proyectos\\Neocomplexx\\webapi\\webapi.csproj": {}
+    "C:\\Users\\neoco\\proyecto\\neocomplexx-fullstack-test\\webapi\\webapi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Matias\\Desktop\\Matias\\Proyectos\\Neocomplexx\\webapi\\webapi.csproj": {
+    "C:\\Users\\neoco\\proyecto\\neocomplexx-fullstack-test\\webapi\\webapi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Matias\\Desktop\\Matias\\Proyectos\\Neocomplexx\\webapi\\webapi.csproj",
+        "projectUniqueName": "C:\\Users\\neoco\\proyecto\\neocomplexx-fullstack-test\\webapi\\webapi.csproj",
         "projectName": "webapi",
-        "projectPath": "C:\\Users\\Matias\\Desktop\\Matias\\Proyectos\\Neocomplexx\\webapi\\webapi.csproj",
-        "packagesPath": "C:\\Users\\Matias\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Matias\\Desktop\\Matias\\Proyectos\\Neocomplexx\\webapi\\obj\\",
+        "projectPath": "C:\\Users\\neoco\\proyecto\\neocomplexx-fullstack-test\\webapi\\webapi.csproj",
+        "packagesPath": "C:\\Users\\neoco\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\neoco\\proyecto\\neocomplexx-fullstack-test\\webapi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Matias\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\neoco\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.2"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
